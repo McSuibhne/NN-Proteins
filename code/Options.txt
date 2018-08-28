@@ -1,0 +1,29 @@
+epsilon 0.0001
+NU 22
+NLayers 1
+CODE 10
+
+context 15
+Moore   1
+
+Cseg    10
+Cwin    7
+cycles  1
+
+Classes 3
+Thresholds 0.5 1.5
+
+DEEP	0
+
+Step    1
+shortcut 0
+seed    949
+shuffle 1
+batch_blocks 1265
+readModel    0
+readEpoch    0
+nEpochs      1000
+adaptive     100
+reload       1
+belief       0
+threshold    0

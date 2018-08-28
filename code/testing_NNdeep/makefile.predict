@@ -1,0 +1,24 @@
+OBJECTST = Layer.o MModel.o NN.o Predict.o
+HEADERST = Layer.h MModel.h NN.h Sequence.h 
+
+CC	= g++
+CFLAGS  = -O3
+
+Predict :	$(OBJECTST) 
+	$(CC) $(CFLAGS) -o $@ $(OBJECTST) $(LLIBS)
+
+Predict.o : Predict.cxx $(HEADERST)
+	$(CC) -c $(CFLAGS) $*.cxx
+
+Layer.o : Layer.cxx $(HEADERST)
+	$(CC) -c $(CFLAGS) $*.cxx
+
+MModel.o : MModel.cxx $(HEADERST)
+	$(CC) -c $(CFLAGS) $*.cxx
+
+NN.o : NN.cxx $(HEADERST)
+	$(CC) -c $(CFLAGS) $*.cxx
+
+
+clean:
+	rm *.o Predict
