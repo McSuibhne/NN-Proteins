@@ -1,0 +1,11 @@
+Jonathan Sweeney 14343826 
+
+All Implementation files written and executed through Intellij. Java must be installed for compilation and running.
+
+All code was written for the purpose of generating the neural network training/testing/statistics/Graph data files from large datasets of raw protein input or neural network output, as described and documented in the report. 
+
+No code will work without those input files, each of which is several hundreds of megabytes in size.
+
+The ProteinParser file conatins the main method from which almost all other files are used. This builds the basic training set for neural network input and is based on an object oriented model.
+
+The GenerateStatistics and Graphs files are run standalone, and each follow a more linear-script design in order to generate the desired output files. The format and running of all scripts is detailed in the implementation section of the report.
